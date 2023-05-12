@@ -15,7 +15,7 @@ stages:
   - job: FirstJob
     steps:
     - bash: echo ${PipelineLevelVarible}
-    - bash: echo ${Build.SourceBranchName}
+    - bash: echo ${Build.SourceBranch}
     - bash: echo ${Build.BuildNumber}
 - stage: Devdeploy
   variables:
