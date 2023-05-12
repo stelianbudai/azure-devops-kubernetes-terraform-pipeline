@@ -17,7 +17,7 @@ stages:
     - bash: echod build second job
 - stage: Devdeploy
   dependsOn:
-  - FirstJob
+  - Build
   jobs:
   - job: Devdeployjob
     steps:
