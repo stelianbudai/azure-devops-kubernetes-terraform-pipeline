@@ -14,9 +14,9 @@ stages:
   jobs:
   - job: FirstJob
     steps:
-    - bash: echo ${PipelineLevelVarible}
+    - bash: echo ${Release.EnvironmentName}
 
-    - bash: echo ${Build.BuildNumber}
+    - bash: echo ${Release.EnvironmentId}
 - stage: Devdeploy
   variables:
     environment: Dev
