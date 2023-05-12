@@ -26,7 +26,7 @@ stages:
   - job: Devdeployjob
     steps:
     - bash: echo  deplo job
-    - bash: ls -R ${build.artifactstagingdirectory}
+
     - task: CopyFiles@2
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)'
